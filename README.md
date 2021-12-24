@@ -17,7 +17,7 @@
   uma preview das notícias.
 </p>
 
-### 🔌 Como rodar o projeto
+### 🔌 Como rodar o projeto | Local
 ---
 Caso queira rodar o projeto local, você deve configurar as seguintes variáveis de ambiente em uma arquivo .env.local:
 ```bash
