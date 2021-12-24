@@ -8,7 +8,7 @@ export default async function saveSubscription(subscriptionId: string, customerI
             "ref",
             q.Get(
                 q.Match(
-                    q.Index('user_by_customer_id'),
+                    q.Index('user_by_stripe_customer_id'),
                     customerId
                 )
             )
