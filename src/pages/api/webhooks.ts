@@ -23,7 +23,7 @@ export const config = {
 }
 
 const relevantEvents = new Set([
-    'check.session.completed',
+    'checkout.session.completed',
     'customer.subscription.created',
     'customer.subscription.updated',
     'customer.subscription.deleted'
