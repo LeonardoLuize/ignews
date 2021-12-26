@@ -1,34 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <img src="./public/images/logo.svg">
+</h1>
+<p align="center">Site de notícias sobre React feito no curso ignite</p>
 
-## Getting Started
+<h4 align="center"> 
+	- Status: ✅ -
+</h4>
 
-First, run the development server:
+### ☑️ Sobre
+---
 
+<p>
+  Seguindo as aulas do curso, desenvolvi este website que tem como foco 
+  mostrar notícias sobre React, a ideia principal é que para ver as notícias 
+  você pague uma assinatura e caso não tenha a assinatura você consegue ver 
+  uma preview das notícias.
+</p>
+
+### 🔌 Como rodar o projeto | Local
+---
+Caso queira rodar o projeto local, você deve configurar as seguintes variáveis de ambiente em uma arquivo .env.local:
 ```bash
-npm run dev
-# or
-yarn dev
+# Stripe
+STRIPE_API_KEY
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY
+STRIPE_WEBHOOK_SECRET
+STRIPE_SUCCESS_URL=http://localhost:3000/posts
+STRIPE_CANCEL_URL=http://localhost:3000/
+
+# Next Auth
+GITHUB_CLIENT_ID
+GITHUB_CLIENT_SECRET
+
+# FaunaDb
+FAUNA_KEY
+
+# Prismic Cms
+PEISMIC_ENDPOINT
+PRISMIC_ACCESS_TOKEN
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Depois de configurar as variáveis de ambiente é necessário executar os seguintes comandos:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+# Instale as dependências
+$ npm install
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Execute o projeto em desenvolvimento
+$ npm run dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Depois de iniciar o projeto em desenvolvimento, basta acessar http://localhost:3000/
+```
 
-## Learn More
+### 🔋 Tecnologias
+---
 
-To learn more about Next.js, take a look at the following resources:
+- [React](https://pt-br.reactjs.org/)
+- [NextJs](https://nextjs.org/)
+- [FaunaDb](https://fauna.com/)
+- [Stripe](https://stripe.com)
+- [Prismic](https://prismic.io/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🎲 Feito por
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<a href="https://github.com/LeonardoLuize">
+ <img src="https://avatars.githubusercontent.com/u/74014082?v=4" width="100px;"/>
+ <br />
+ <sub><b>Leonardo Luize</b></sub></a> <a href="https://github.com/LeonardoLuize" >💻</a>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feito por Leonardo Luize 😁
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Linkedin Badge](https://img.shields.io/badge/-Leonardo-blue?style=rounded&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leonardoluize/)](https://www.linkedin.com/in/leonardoluize/) 
+[![Gmail Badge](https://img.shields.io/badge/-leonardo.luize2@gmail.com-c14438?style=rounded&logo=Gmail&logoColor=white&link=mailto:leonardo.luize2@gmail.com)](mailto:leonardo.luize2@gmail.com)
+
