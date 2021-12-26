@@ -9,7 +9,7 @@ function SignInButton() {
 
   return session ? (
 
-    /* Logged */
+    /* Log out */
     <button type="button" className={styles.signInButton} onClick={() => signOut()}>
       <FaGithub color="#04d361" />
       {session.user.name}
@@ -18,7 +18,7 @@ function SignInButton() {
 
   ):(
     
-    /* Not Logged */
+    /* Log in */
 
     <button type="button" className={styles.signInButton} onClick={() => signIn('github')}>
       <FaGithub color="#eba417" />
